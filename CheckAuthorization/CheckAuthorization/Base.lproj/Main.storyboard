@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYn-Sy-Yuh">
+                                <rect key="frame" x="133" y="278" width="108" height="30"/>
+                                <state key="normal" title="检查麦克风权限"/>
+                                <connections>
+                                    <action selector="Microphone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nfC-3K-Pbz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qI-l0-2aA">
+                                <rect key="frame" x="141" y="378" width="92" height="30"/>
+                                <state key="normal" title="检查相册权限"/>
+                                <connections>
+                                    <action selector="Photo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pt4-hz-5OV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fw-GV-vPV">
+                                <rect key="frame" x="141" y="428" width="92" height="30"/>
+                                <state key="normal" title="检查定位权限"/>
+                                <connections>
+                                    <action selector="Location:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hMG-0A-K1f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0BQ-To-qnT">
+                                <rect key="frame" x="141" y="328" width="92" height="30"/>
+                                <state key="normal" title="检查相机权限"/>
+                                <connections>
+                                    <action selector="Camera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfg-82-ZKc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0fw-GV-vPV" firstAttribute="centerX" secondItem="5qI-l0-2aA" secondAttribute="centerX" id="9GU-JU-mps"/>
+                            <constraint firstItem="KYn-Sy-Yuh" firstAttribute="centerX" secondItem="0BQ-To-qnT" secondAttribute="centerX" id="BrK-8Q-zBo"/>
+                            <constraint firstItem="0fw-GV-vPV" firstAttribute="top" secondItem="5qI-l0-2aA" secondAttribute="bottom" constant="20" id="DEX-PC-jUs"/>
+                            <constraint firstItem="0BQ-To-qnT" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="FU8-2v-egi"/>
+                            <constraint firstItem="5qI-l0-2aA" firstAttribute="top" secondItem="0BQ-To-qnT" secondAttribute="bottom" constant="20" id="L1e-3i-Svq"/>
+                            <constraint firstItem="0BQ-To-qnT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dnQ-ad-Xzy"/>
+                            <constraint firstItem="0BQ-To-qnT" firstAttribute="top" secondItem="KYn-Sy-Yuh" secondAttribute="bottom" constant="20" id="knU-C7-fOT"/>
+                            <constraint firstItem="5qI-l0-2aA" firstAttribute="centerX" secondItem="0BQ-To-qnT" secondAttribute="centerX" id="xu1-3Z-G0B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
